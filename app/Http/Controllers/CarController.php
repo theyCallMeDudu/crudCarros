@@ -26,8 +26,7 @@ class CarController extends Controller
      */
     public function index()
     {
-        $teste = $this->objCar->all();
-        dd($teste);
+        return view('index');
     }
 
     /**
