@@ -26,7 +26,13 @@ class CarController extends Controller
      */
     public function index()
     {
-        return view('index');
+        // dd($this->objCar->all());
+        //dd($this->objCar->find(1)->relUsers);
+        //return view('index');
+
+        $car = $this->objCar->all();
+        return view('index', compact('car'));
+
     }
 
     /**
